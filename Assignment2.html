@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment2</title>
+    <style>
+        /*Creating style in html*/
+        body {
+            margin: 0px auto;
+            width: 500px auto;
+            padding:50px;
+        }
+        table{
+            margin: 0px auto;
+            max-width:500px;
+            margin-bottom:10px;
+        }
+        .container{            
+            background-color: beige;
+            padding: 50px;
+        }
+        .table_container{
+            max-width:500px;
+        }
+        label {
+            display:block;
+        }
+
+        input{
+            padding:5px;
+            margin: 5px 0;
+        }
+        h1{
+            color: darkred;
+        }
+        td{
+            color: black;
+        }
+        footer{
+            width: 100%;
+            padding:10px;
+            color: brown;
+            text-align: left;
+            font-weight: bold;
+             
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h2>Assignment 2</h2>
+        <h1>Create a Table</h1>
+        <!--form for user to choose number of rows and column-->
+        <form>
+            <label for ="numrows">Enter number of rows: </label>
+            <!--input textfield-->
+            <input type="text" name="numrows" id="numrows" />
+            <label for="numcols">Enter number of columns: </label>
+            <input type="text" name="numcols" id="numcols" /><br />
+            <!-- submit button-->
+            <input name="output" type="button" value="Create Table" onclick="makeTable();"/>
+            <input type="reset" value="Clear">
+
+        </form>
+        <br /><br />
+        <div class="table_container">
+            <!--table shows here-->
+        <div id="result"></div>
+        </div>
+        <footer>
+            <p>Copyright &copy; reserved by Yasaman Barzegar</p>
+        </footer>
+    <script src="assignment2.js"></script> <!-- calling javascript file-->
+    </div>
+</body>
+</html>
